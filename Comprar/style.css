@@ -1,0 +1,157 @@
+:root {
+  --primaria: #018038;
+  --secundaria: #9edbb9;
+  --terceira: #2d899e;
+  --branco: #f0f5ef;
+}
+/*cabecalho*/
+.marca {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.marca h1 {
+  color: var(--primaria);
+  font-size: 70px;
+}
+.marca p {
+  font-size: 25px;
+  color: gray;
+}
+header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+
+
+/*Navegação*/
+.navbar {
+  background-color: var(--secundaria);
+  padding: 10px;
+  border-radius: 10px;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.navbar ul li {
+  padding: 0px 30px;
+}
+.navbar ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+/*sessão*/
+
+.principal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sessao{
+  width: 100%;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+
+}
+.product{
+  width: 300px;
+}
+.principal div:first-of-type, .principal div:last-of-type {
+  width: 100%;
+  text-align: center;
+  
+}
+.quantity-controls,.img-product, .product h2, .product P {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+img{
+  width: 200px;
+  height: 200px;
+  padding:20px
+}
+
+
+
+
+/*Rodapé*/
+.rodape {
+  background-color: var(--secundaria);
+  color: black;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+.rodape p {
+  font-size: 14px;
+}
+
+
+
+
+/*Modal*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.modal-content.fullscreen {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.items-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.items-list li {
+  margin-bottom: 10px;
+}
+
+/* Estilos adicionais para ajustar a sobreposição das modals */
+#modal-pagamento-sucesso {
+  z-index: 10000;
+}
+/*teste*/
+
+

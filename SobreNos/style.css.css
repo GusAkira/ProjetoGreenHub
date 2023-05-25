@@ -1,0 +1,68 @@
+:root{
+  --primaria: #018038;
+  --secundaria: #9edbb9;
+  --terceira: #2D899E;
+  --branco: #f0f5ef;
+}
+
+
+/*cabecalho*/
+.marca{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.marca h1{
+  color: var(--primaria);
+  font-size: 70px;
+}
+.marca p{
+  font-size: 25px;
+  color: gray;
+}
+header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+/*Navegação*/
+.navbar {
+  background-color: var(--secundaria);  
+  padding: 10px;
+  border-radius: 10px;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.navbar ul li {
+  padding:0px 30px;
+}
+.navbar ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+}
+/*sessão*/
+.sessao h1 {
+  text-align: center;
+  font-size: 30px; 
+}
+.sessao p {
+  padding: 5px 200px;  
+}
+.sessao p::first-letter{
+  padding-left: 2em ;
+}
+/*Rodapé*/
+.rodape {
+  background-color: var(--secundaria);
+  color: black;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+.rodape p {
+  font-size: 14px;
+}

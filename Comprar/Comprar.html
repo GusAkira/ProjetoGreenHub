@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha Página de Vendas</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="marca">
+      <h1>GreenHub</h1>
+      <p>
+        Seja bem-vindo(a) ao GreenHub, sua loja eco-friendly para uma vida
+        sustentável!
+      </p>
+    </header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="../Catalogo/Catalogo.html">Catalogo</a></li>
+        <li><a href="../SobreNos/SobreNos.html">Sobre nós</a></li>
+        <li><a href="../login/Login.html">Login</a></li>
+      </ul>
+    </nav>
+    <main class="principal"> 
+      <div>
+        <h1>Produtos - GreenHub Surprise</h1> 
+      </div>
+      <section class="sessao">
+        <article class="product">
+          <div class="img-product">
+            <img src="../img/bigbox4.jpg" class="img-product" alt="" />
+          </div>          
+          <h2>EcoStyle Box Mini</h2>
+          <div class="quantity-controls">
+            <button class="subtract">-</button>
+            <span class="quantity">0</span>
+            <button class="add">+</button>
+          </div>
+          <p>Preço Unitário: R$ 79,99</p>
+        </article>
+  
+        <article class="product">
+          <div class="img-product">
+            <img src="../img/bigbox3.jpg" class="img-product" alt="" />
+          </div>          
+          <h2>EcoStyle Box Standard</h2>
+          <div class="quantity-controls">
+            <button class="subtract">-</button>
+            <span class="quantity">0</span>
+            <button class="add">+</button>
+          </div>
+          <p>Preço Unitário: R$ 119,99</p>
+        </article>
+  
+        <article class="product">
+          <div class="img-product">
+            <img src="../img/bigbox1.webp" class="img-product" alt="" />
+          </div>          
+          <h2>EcoStyle Box Deluxe</h2>
+          <div class="quantity-controls">
+            <button class="subtract">-</button>
+            <span class="quantity">0</span>
+            <button class="add">+</button>
+          </div>
+          <p>Preço Unitário: R$ 159,99</p>
+        </article>
+      </section>         
+      
+      <section class="sessao">
+        <article class="product">
+          <div class="img-product">
+            <img src="../img/bigbox6.jpg" class="img-product" alt="" />
+          </div>          
+          <h2>EcoBeauty Box Mini</h2>
+          <div class="quantity-controls">
+            <button class="subtract">-</button>
+            <span class="quantity">0</span>
+            <button class="add">+</button>
+          </div>
+          <p>Preço Unitário: R$ 69,99</p>
+        </article>
+  
+        <article class="product">
+          <div class="img-product">
+            <img src="../img/bigbox2.jpg" class="img-product" alt="" />
+          </div>          
+          <h2>EcoBeauty Box Standard</h2>
+          <div class="quantity-controls">
+            <button class="subtract">-</button>
+            <span class="quantity">0</span>
+            <button class="add">+</button>
+          </div>
+          <p>Preço Unitário: R$ 109,99</p>
+        </article>
+  
+        <article class="product">
+          <div class="img-product">
+            <img src="../img/bigbox5.jpg" class="img-product" alt="" />
+          </div>          
+          <h2>EcoBeauty Box Deluxe</h2>
+          <div class="quantity-controls">
+            <button class="subtract">-</button>
+            <span class="quantity">0</span>
+            <button class="add">+</button>
+          </div>
+          <p>Preço Unitário: R$ 139,99</p>
+        </article>
+      </section>
+      
+      <div>
+        <a href="#modal-confirmar-pedido">Finalizar Pedido</a>
+      </div>      
+    </main>
+
+    <footer class="rodape">
+      <p>&copy; 2023 GreenHub.</p>
+    </footer>
+
+    <!-- Modal Confirmar Pedido -->
+    <div id="modal-confirmar-pedido" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Confirmar Pedido</h2>
+        <ul class="items-list">
+          <!-- Itens selecionados serão adicionados dinamicamente aqui -->
+        </ul>
+        <p>Total: R$<span id="total-valor">0,00</span></p>
+        <a href="#modal-cartao-credito">Cartão de Crédito</a>
+      </div>
+    </div>
+
+    <!-- Modal Cartão de Crédito -->
+    <div id="modal-cartao-credito" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Preencha os dados do Cartão de Crédito</h2>
+        <form class="credit-card-form">
+          <label for="card-number">Número do Cartão:</label>
+          <input type="text" id="card-number" required />
+
+          <label for="card-holder">Titular do Cartão:</label>
+          <input type="text" id="card-holder" required />
+
+          <label for="expiration-date">Data de Expiração:</label>
+          <input type="text" id="expiration-date" required />
+
+          <label for="cvv">CVV:</label>
+          <input type="text" id="cvv" required />
+
+          <input type="submit" value="Pagar" />
+        </form>
+        <button id="btn-voltar-confirmar-pedido">Voltar</button>
+      </div>
+    </div>
+
+    <!-- Modal Pagamento com Sucesso -->
+    <div id="modal-pagamento-sucesso" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Pagamento com Sucesso</h2>
+        <p>O pagamento foi realizado com sucesso!</p>
+        <button class="bnt-entrar"><a href="../home/Home.html">Sair</a></button>
+      </div>
+    </div>
+    <script src="../javascript.js"></script>
+  </body>
+</html>

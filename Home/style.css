@@ -1,0 +1,91 @@
+:root{
+  --primaria: #018038;
+  --secundaria: #9edbb9;
+  --terceira: #2D899E;
+  --branco: #f0f5ef;
+}
+/*cabecalho*/
+.marca{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.marca h1{
+  color: var(--primaria);
+  font-size: 70px;
+}
+.marca p{
+  font-size: 25px;
+  color: gray;
+}
+header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+/*Navegação*/
+.navbar {
+  background-color: var(--secundaria);  
+  padding: 10px;
+  border-radius: 10px;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.navbar ul li {
+  padding:0px 30px;
+}
+.navbar ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+}
+/*sessão*/
+
+.sessao-grid{  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap:20px;
+  text-align: center;  
+  padding: 0px 50px 20px ;
+}
+.sessao-grid h2{
+  grid-column: 1 / span 2;
+  padding: 20px;
+  font-size: 50px;
+  background-color: #FF4500;
+  border-radius: 50px;
+}
+.sessao-grid article{
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);  
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+.sessao-grid article img{
+  width:500px;
+  padding: 50px;
+  border: 1px solid rgb(221, 218, 218);
+}
+article p:last-of-type {
+  color: red;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+
+/*Rodapé*/
+.rodape {
+  background-color: var(--secundaria);
+  color: black;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+.rodape p {
+  font-size: 14px;
+}
+

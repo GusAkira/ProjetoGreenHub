@@ -1,0 +1,135 @@
+:root{
+  --primaria: #018038;
+  --secundaria: #9edbb9;
+  --terceira: #2D899E;
+  --branco: #f0f5ef;
+}
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;  
+}
+/*marca*/
+.marca{
+  width: 500px;
+}
+.marca h1{
+  color: var(--primaria);
+  font-size: 100px;
+}
+.marca p{
+  font-size: 25px;
+}
+/*Formulario*/ 
+.formulario {
+  box-shadow: -1px 1px 2px black;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 500px; 
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+/*Input*/
+.input-padrao, .bnt-entrar {    
+ width: 100%;
+ padding: 15px;
+ border-radius: 20px;
+ margin: 15px 0px;
+ border: none;
+ background-color: var(--branco);  
+}
+.bnt-entrar{
+  cursor: pointer;  
+  background-color: var(--secundaria);
+  padding: 15px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.bnt-entrar:hover{
+  background-color: var(--primaria);
+  transition:1s ; 
+  color: white; 
+}
+.bnt-entrar a{
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  font-size: 25px; 
+}
+.bnt-entrar a:hover{
+  color: white;
+  transition:1s ; 
+}
+.link-a{
+  color:black;
+  text-decoration: none;
+  display: flex;    
+  justify-content: center; 
+  padding: 15px;  
+  font-size: 20px;
+}
+.link-a:hover{
+  color: var(--primaria);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+.login-container {
+  width: 400px;
+  margin: 100px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin-top: 20px;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+button a {
+  color: white;
+  text-decoration: none;
+} */

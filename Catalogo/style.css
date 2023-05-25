@@ -1,0 +1,101 @@
+:root{
+  --primaria: #018038;
+  --secundaria: #9edbb9;
+  --terceira: #2D899E;
+  --branco: #f0f5ef;
+}
+
+
+/*cabecalho*/
+.marca{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.marca h1{
+  color: var(--primaria);
+  font-size: 70px;
+}
+.marca p{
+  font-size: 25px;
+  color: gray;
+}
+header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+
+/*Navegação*/
+.navbar {
+  background-color: var(--secundaria);  
+  padding: 10px;
+  border-radius: 10px;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.navbar ul li {
+  padding:0px 30px;
+}
+.navbar ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+
+/*sessão*/
+.sessao{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-around;  
+  padding: 0px 50px 20px ; 
+}
+.sessao h2{ 
+  padding: 20px;
+  font-size: 50px;
+  text-align: center;
+  width: 100%;
+}
+.sessao .product{
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);  
+  padding: 20px;  
+  text-align: center;
+  font-size: 20px;  
+}
+.product{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 40%;
+}
+.product div{
+  width: 150px;
+}
+.product div:last-of-type{
+  width: 100%;
+}
+.product div img{
+  width: 110px;  
+}
+
+
+
+
+/*Rodapé*/
+.rodape {
+  background-color: var(--secundaria);
+  color: black;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+.rodape p {
+  font-size: 14px;
+}
+
