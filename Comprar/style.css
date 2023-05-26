@@ -3,6 +3,7 @@
   --secundaria: #9edbb9;
   --terceira: #2d899e;
   --branco: #f0f5ef;
+  --borda:rgb(221, 218, 218);
 }
 /*cabecalho*/
 .marca {
@@ -56,7 +57,6 @@ header h1 {
 }
 .sessao{
   width: 100%;
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -80,7 +80,8 @@ header h1 {
 img{
   width: 200px;
   height: 200px;
-  padding:20px
+  padding:20px;
+  border: 1px solid var(--borda);
 }
 
 
