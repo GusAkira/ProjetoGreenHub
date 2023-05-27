@@ -7,6 +7,7 @@
     <title>Minha Página de Vendas</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="../fontawesome/css/all.min.css">
   </head>
   <body>
     <header class="marca">
@@ -15,13 +16,18 @@
         Seja bem-vindo(a) ao GreenHub, sua loja eco-friendly para uma vida
         sustentável!
       </p>
-    </header>
+    </header>    
     <nav class="navbar">
+      <div class="search-box">
+        <input type="search" class="search-input" id="search-input" placeholder="Digite o nome do produto">
+        <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
       <ul>
-        <li><a href="../Home/Home.html">Home</a></li>
-        <li><a href="../Catalogo/Catalogo.html">Catalogo</a></li>
-        <li><a href="../SobreNos/SobreNos.html">Sobre nós</a></li>
-        <li><a href="../login/Login.html">Login</a></li>
+        <li><a href="../Home/Home.html">Home <i class="fa-solid fa-house"></i></a></li>
+        <li><a href="../Catalogo/Catalogo.html">Catalogo <i class="fa-solid fa-cart-shopping"></i></a></li>
+        <li><a href="../SobreNos/SobreNos.html">Sobre nós <i class="fa-solid fa-building"></i></a></li>
+        <li><a href="../login/Login.html">Login <i class="fa-solid fa-right-to-bracket"></i></a></li>
+        <li><a href="../AlterarSenha/AlterarSenha.html">Alterar senha <i class="fa-solid fa-lock"></i></a></li>
       </ul>
     </nav>
     <main class="principal"> 
@@ -211,7 +217,7 @@
         </article>
       </section>
       <div>
-        <button class="bnt-entrar"><a href="#modal-confirmar-pedido">Finalizar Pedido</a></button>
+        <button class="bnt-entrar"><a href="#modal-confirmar-pedido">Finalizar Pedido <i class="fa-solid fa-credit-card"></i></a></button>
         <a href=""></a>
       </div>      
     </main>
@@ -271,5 +277,6 @@
       </div>
     </div>
     <script src="javascript.js"></script>
+    
   </body>
 </html>
