@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,6 +9,7 @@
   </head>
   <body>
     <div class="marca">
+      <h1>Login</h1>
       <h1>GreenHub</h1>
       <p>
         Bem-vindo ao GreenHub! Aqui você encontrará produtos ecológicos de
@@ -16,25 +17,34 @@
         verde!
       </p>
     </div>
-    <section class="formulario">      
+    <section class="formulario">
       <form>
-        <input
-          type="text"
-          class="input-padrao"
-          placeholder="Usuario"
-        />
-        <input
-          type="password"
-          class="input-padrao"
-          placeholder="Senha"
-        />
-        <button class="bnt-entrar"><a href="../Comprar/Comprar.html">Entrar</a></button>
+        <input type="email" class="input-padrao" placeholder="E-mail" />
+        <input type="password" class="input-padrao" placeholder="Senha" />
+        <button class="bnt-entrar">
+          <a href="../Home/Home.html">Entrar</a>
+        </button>
         <div>
-          <a href="" class="link-a">Esqueceu Senha?</a> 
-        </div>           
-        <hr>    
-        <button class="bnt-entrar"><a href="">Criar nova conta</a></button>
+          <a href="" class="link-a">Esqueceu Senha?</a>
+        </div>
+        <hr />
+        <button class="bnt-entrar">
+          <a href="../Cadastro/Cadastro.html">Criar nova conta</a>
+        </button>
       </form>
     </section>
+
+    <!-- Modal -->
+    <div class="modal-overlay">
+      <div class="modal-content">
+        <h2>Recuperação de Senha</h2>
+        <p>Informe seu e-mail para recuperar sua senha:</p>
+        <input type="email" placeholder="Digite seu e-mail" required />
+        <button class="fechar-modal" class="bnt-modal">
+          <a href="../AlterarSenha/AlterarSenha.html">Fechar</a>
+        </button>
+      </div>
+    </div>
+    <script src="javascript.js"></script>
   </body>
 </html>

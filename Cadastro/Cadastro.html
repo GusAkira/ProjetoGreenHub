@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="formulario">
+      <div class="marca">
+        <h1>Cadastro de conta</h1>
+        <p>
+          Junte-se ao GreenHub e faça a diferença no mundo. Cadastre-se agora e
+          comece!
+        </p>
+      </div>
+      <form class="input-group" id="cadastro-form">
+        <h2><br> Informações Pessoais <hr> </h2>
+        <div class="input-box">
+          <label for="nome">Nome completo:</label>
+          <input
+            type="text"
+            name="nome"
+            placeholder="Nome Completo"
+            class="input-padrao"
+            required
+          />
+        </div>
+        <div class="input-box">
+          <label for="genero">Gênero:</label>
+          <select id="genero" name="genero" required>
+            <option value="">Selecione</option>
+            <option value="feminino">Feminino</option>
+            <option value="masculino">Masculino</option>
+            <option value="nao-informar">Não informar</option>
+          </select>
+        </div>
+        <div class="input-box">
+          <label for="data-nascimento">Data de nascimento:</label>
+          <input
+            type="date"
+            name="data-nascimento"
+            placeholder="DD/MM/AAAA"
+            class="input-padrao"
+            required
+          />
+        </div>
+        <div class="input-box">
+          <label for="cpf">CPF:</label>
+          <input
+            type="text"
+            name="cpf"
+            placeholder="___.___.___-__"
+            class="input-padrao"
+            required
+          />
+        </div>
+        <h2>Endereço<hr></h2>
+        <div class="input-box">
+          <label for="cep">CEP:</label>
+          <input
+            type="text"
+            name="cep"
+            placeholder="99999-999"
+            class="input-padrao"
+          />
+        </div>
+        <div class="input-box">
+          <label for="bairro">Bairro:</label>
+          <input
+            type="text"
+            name="bairro"
+            placeholder="Bairro"
+            class="input-padrao"
+          />
+        </div>
+        <div class="input-box">
+          <label for="cidade">Cidade:</label>
+          <input
+            type="text"
+            name="cidade"
+            placeholder="Cidade"
+            class="input-padrao"
+          />
+        </div>
+        <div class="input-box">
+          <label for="estado">Estado:</label>
+          <input
+            type="text"
+            name="estado"
+            placeholder="Estado"
+            class="input-padrao"
+          />
+        </div>
+        <div class="input-box">
+          <label for="pais">País:</label>
+          <input
+            type="text"
+            name="pais"
+            placeholder="País"
+            class="input-padrao"
+          />
+        </div>
+        <h2>Contato <hr></h2>
+        <div class="input-box">
+          <label for="telefone">Telefone:</label>
+          <input
+            type="tel"
+            name="telefone"
+            placeholder="(__) _____-____"
+            class="input-padrao"
+          />
+        </div>
+        <div class="input-box">
+          <label for="email">E-mail:</label>
+          <input
+            type="email"
+            name="email"
+            class="input-padrao"
+            placeholder="GreenHub@gmail.com"
+            required
+          />
+        </div>
+        <div class="input-box">
+          <label for="senha">Senha:</label>
+          <input
+            type="password"
+            name="senha"
+            minlength="6"
+            maxlength="20"
+            class="input-padrao"
+            placeholder="Senha"
+            required
+          />
+        </div>
+        <button class="bnt-entrar" id="cadastrar-button"><a href="">Cadastrar</a></button>
+        
+      </form>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modal">
+      <div class="modal-content">
+        <h2>Cadastro realizado com sucesso!</h2>
+        <p>Obrigado por se cadastrar no GreenHub.</p>
+        <button id="fechar-modal" class="bnt-modal"><a href="../Home/Home.html">OK</a></button>
+      </div>
+    </div>
+    <script src="javascript.js"></script>
+  </body>
+</html>

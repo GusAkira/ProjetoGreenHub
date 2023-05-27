@@ -40,7 +40,7 @@ header h1 {
   justify-content: flex-end;
 }
 .navbar ul li {
-  padding:0px 30px;
+  padding: 0px 30px 0px 0px;
 }
 .navbar ul li a {
   color: black;
@@ -74,6 +74,7 @@ header h1 {
   flex-wrap: wrap;
   justify-content: space-around;
   width: 40%;
+  margin-bottom: 40px;
 }
 .product div{
   width: 150px;
@@ -103,3 +104,45 @@ header h1 {
   font-size: 14px;
 }
 
+
+@media (max-width: 600px) {
+  .navbar ul{
+    display: flex;
+    justify-content: center;
+  }
+  .marca h1{
+    padding: 20px;
+  }
+  .marca p{
+    display: none;
+  }
+  .sessao{
+    width: 90%;
+  }
+  .product{
+    width: 100%;
+    display: flex;    
+  }
+  .product div{
+    width: 100%;
+  }
+  .product div img{
+    width: 50%;
+    height: 50%;
+  }
+}
+
+/* Media queries para tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .navbar ul{
+    display: flex;
+    justify-content: center;
+  }
+  .marca p{
+    width: 90%;
+    text-align: center;
+  }
+  .sessao{
+    width: 90%;
+  }
+}

@@ -3,7 +3,7 @@
   --secundaria: #9edbb9;
   --terceira: #2d899e;
   --branco: #f0f5ef;
-  --borda:rgb(221, 218, 218);
+  --borda: rgb(221, 218, 218);
 }
 /*cabecalho*/
 .marca {
@@ -25,8 +25,6 @@ header h1 {
   margin-bottom: 10px;
 }
 
-
-
 /*Navegação*/
 .navbar {
   background-color: var(--secundaria);
@@ -39,7 +37,7 @@ header h1 {
   justify-content: flex-end;
 }
 .navbar ul li {
-  padding: 0px 30px;
+  padding: 0px 30px 0px 0px;
 }
 .navbar ul li a {
   color: black;
@@ -49,43 +47,85 @@ header h1 {
 
 /*sessão*/
 
-.principal{
+.principal {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  width: 100%;
 }
-.sessao{
+.sessao {
   width: 100%;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: space-evenly;
   padding: 20px;
-
 }
-.product{
-  width: 300px;
-}
-.principal div:first-of-type, .principal div:last-of-type {
+.sessao h1 {
   width: 100%;
   text-align: center;
-  
+  font-size: 30px;
+  background-color: var(--borda);
+  border-radius: 20px;
+  padding: 20px;
 }
-.quantity-controls,.img-product, .product h2, .product P {
+
+.product-group {
+  display: flex;
+  justify-content: space-around;
+}
+.product {
+  width: 300px;
+}
+.principal div:first-of-type,
+.principal div:last-of-type {
+  width: 100%;
+  text-align: center;
+}
+.quantity-controls,
+.img-product,
+.product h2,
+.product P {
   display: flex;
   text-align: center;
   justify-content: space-evenly;
 }
 
-img{
+img {
   width: 200px;
   height: 200px;
-  padding:20px;
+  padding: 20px;
   border: 1px solid var(--borda);
 }
 
+/*botao*/
 
-
+.bnt-entrar {
+  cursor: pointer;
+  background-color: var(--secundaria);
+  padding: 15px;
+  color: black;
+  align-content: center;
+  border-radius: 20px;
+  margin: 30px 0px 50px;
+  width: 300px;
+}
+.bnt-entrar:hover {
+  background-color: var(--primaria);
+  transition: 1s;
+  color: white;
+}
+.bnt-entrar a {
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+.bnt-entrar a:hover {
+  color: white;
+  transition: 1s;
+}
 
 /*Rodapé*/
 .rodape {
@@ -99,9 +139,6 @@ img{
   font-size: 14px;
 }
 
-
-
-
 /*Modal*/
 .modal {
   display: none;
@@ -113,13 +150,15 @@ img{
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
 }
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 80%;  
+  
 }
 .modal-content.fullscreen {
   width: 100%;
@@ -149,10 +188,80 @@ img{
   margin-bottom: 10px;
 }
 
-/* Estilos adicionais para ajustar a sobreposição das modals */
-#modal-pagamento-sucesso {
-  z-index: 10000;
+.bnt-modal {
+  font-size: 20px;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
 }
-/*teste*/
+.bnt-modal a {
+  text-decoration: none;
+}
 
+.credit-card-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.credit-card-group {
+  padding: 5px;
+}
 
+@media (max-width: 600px) {
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+  }
+  .marca h1 {
+    padding: 20px;
+  }
+  .marca p {
+    display: none;
+  }
+  .product-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*modal*/
+  .credit-card-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .credit-card-group {
+    padding: 5px;
+  }
+}
+
+/* Media queries para tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+  }
+  .marca h1 {
+    padding: 20px;
+  }
+  .marca p {
+    text-align: center;
+  }
+  .principal{
+    padding-top: 20px;
+  }
+  .product-group {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  /*modal*/
+  .credit-card-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .credit-card-group {
+    padding: 5px;
+  }
+  
+}

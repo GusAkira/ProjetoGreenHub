@@ -28,7 +28,7 @@ header h1 {
 /*Navegação*/
 .navbar {
   background-color: var(--secundaria);  
-  padding: 10px;
+  padding: 10px 0px 10px 0px;
   border-radius: 10px;
 }
 .navbar ul {
@@ -45,12 +45,12 @@ header h1 {
   font-size: 25px;
 }
 /*sessão*/
+.sessao{
+  padding: 20px 50px;
+}
 .sessao h1 {
   text-align: center;
   font-size: 30px; 
-}
-.sessao p {
-  padding: 5px 200px;  
 }
 .sessao p::first-letter{
   padding-left: 2em ;
@@ -65,4 +65,39 @@ header h1 {
 }
 .rodape p {
   font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .navbar ul{
+    display: flex;
+    justify-content: center;
+  }
+  .marca h1{
+    padding: 20px;
+  }
+  .marca p{
+    display: none;
+  }
+  .sessao{
+    text-align: center;
+  }
+  
+  
+  
+}
+
+/* Media queries para tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .navbar ul{
+    display: flex;
+    justify-content: center;
+  }
+  .marca p{
+    width: 100%;
+    text-align: center;
+  }
+  .sessao{
+    text-align: center;
+  }
+  
 }

@@ -40,9 +40,18 @@ $("a[href='#modal-confirmar-pedido']").click(function () {
     if (quantity > 0) {
       var product = $(this).closest(".product").find("h2").text(); // Obter o nome do produto do elemento h2
       var priceText = $(this).closest(".product").find("p").text();
-      var price = parseFloat(priceText.split(":")[1].trim().replace("R$", "").replace(",", "."));
+      var price = parseFloat(
+        priceText.split(":")[1].trim().replace("R$", "").replace(",", ".")
+      );
 
-      var listItem = "<li>" + product + " - Quantidade: " + quantity + " - Valor: R$" + (quantity * price).toFixed(2).replace(".", ",") + "</li>";
+      var listItem =
+        "<li>" +
+        product +
+        " - Quantidade: " +
+        quantity +
+        " - Valor: R$" +
+        (quantity * price).toFixed(2).replace(".", ",") +
+        "</li>";
 
       itemsList.append(listItem);
       totalValue += quantity * price;
@@ -52,7 +61,6 @@ $("a[href='#modal-confirmar-pedido']").click(function () {
   $("#total-valor").text(totalValue.toFixed(2).replace(".", ","));
   openModal("#modal-confirmar-pedido");
 });
-
 
 // Evento de clique no link "Cartão de Crédito"
 $("a[href='#modal-cartao-credito']").click(function () {
@@ -77,3 +85,4 @@ $("#btn-voltar-confirmar-pedido").click(function () {
 $(".close").click(function () {
   closeModal(".modal");
 });
+
