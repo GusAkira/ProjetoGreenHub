@@ -72,6 +72,12 @@ header h1 {
     display: flex;
     justify-content: center;
   }
+  .navbar ul li a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
   .marca h1{
     padding: 20px;
   }
@@ -91,6 +97,12 @@ header h1 {
   .navbar ul{
     display: flex;
     justify-content: center;
+  }
+  .navbar ul li a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
   }
   .marca p{
     width: 100%;

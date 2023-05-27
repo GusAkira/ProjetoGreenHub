@@ -270,6 +270,16 @@ img {
     display: flex;
     flex-direction: column-reverse;
   }
+  .navbar ul li a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .search-box{
+    width: 100%;
+    text-align: center
+  }
   .marca h1 {
     padding: 20px;
   }
@@ -296,6 +306,12 @@ img {
   .navbar ul {
     display: flex;
     justify-content: center;
+  }
+  .navbar ul li a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
   }
   .marca h1 {
     padding: 20px;
