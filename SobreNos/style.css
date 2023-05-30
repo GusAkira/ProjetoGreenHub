@@ -48,12 +48,16 @@ header h1 {
 .sessao{
   padding: 20px 50px;
 }
-.sessao h1 {
+.sessao h1, .rodape-contato h1{
   text-align: center;
   font-size: 30px; 
 }
 .sessao p::first-letter{
   padding-left: 2em ;
+}
+.rodape-contato{
+  text-align: center;
+
 }
 /*Rodapé*/
 .rodape {

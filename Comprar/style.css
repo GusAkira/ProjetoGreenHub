@@ -78,6 +78,14 @@ header h1 {
   flex-wrap: wrap;
   width: 100%;
 }
+.principal h1{
+  padding: 20px;
+  font-size: 50px;
+  background-color: #ff4500;
+  border-radius: 50px;
+  text-align: center;
+  width: 100%;
+}
 .sessao {
   width: 100%;
   display: flex;
